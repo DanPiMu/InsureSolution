@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace InsureCompany.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [ApiVersion("1.0")]
+    [Route("v{version:apiVersion}/Policy/[controller]")]
     public class PolicyController : ControllerBase
     {
         private readonly IPolicyService _policyService;

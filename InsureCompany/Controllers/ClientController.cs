@@ -1,10 +1,12 @@
 ﻿using InsureCompany.ApplicationService.Service;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace InsureCompany.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [ApiVersion("1.0")]
+    [Route("v{version:apiVersion}/Client/[controller]")]
     public class ClientController : ControllerBase
     {
         private readonly IClientService _clientService;
@@ -21,9 +23,10 @@ namespace InsureCompany.Controllers
 
             if (client == null)
             {
+                Log.Error($"Client not found by ID: {id}");
                 return NotFound();
             }
-
+            Log.Information($"Student finded by ID: {id}");
             return Ok(client);
         }
 

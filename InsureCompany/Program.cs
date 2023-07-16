@@ -1,4 +1,6 @@
 using InsureCompany.ApplicationService.Extension;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +10,15 @@ Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .WriteTo.File("logs/log.txt",
     rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+.CreateLogger();
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.ReportApiVersions = true;
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+});
+
 
 // Add services to the container.
 

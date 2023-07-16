@@ -13,11 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain Layer", "3. Domai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure Layer", "4. Infrastructure Layer", "{A2BACE7A-6F97-4E67-9FA2-48AE086F5CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsureCompany.Infrastructure", "..\InsureCompany.Infrastructure\InsureCompany.Infrastructure.csproj", "{15CECCA4-FB43-4049-994B-C4025EB53E51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsureCompany.Infrastructure", "..\InsureCompany.Infrastructure\InsureCompany.Infrastructure.csproj", "{15CECCA4-FB43-4049-994B-C4025EB53E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsureCompany.DomainModel", "..\InsureCompany.DomainModel\InsureCompany.DomainModel.csproj", "{E4BD37D7-B959-48F6-BB76-48235EBE9AE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsureCompany.DomainModel", "..\InsureCompany.DomainModel\InsureCompany.DomainModel.csproj", "{E4BD37D7-B959-48F6-BB76-48235EBE9AE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsureCompany.ApplicationService", "..\InsureCompany.ApplicationService\InsureCompany.ApplicationService.csproj", "{1107B7E1-1706-4611-93F8-016F5534FEDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsureCompany.ApplicationService", "..\InsureCompany.ApplicationService\InsureCompany.ApplicationService.csproj", "{1107B7E1-1706-4611-93F8-016F5534FEDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsureCompany.ApplicationService.Tests", "..\InsureCompany.ApplicationService.Tests\InsureCompany.ApplicationService.Tests.csproj", "{074E323B-AEC7-4643-BE38-6CEDEB8AD5AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{1107B7E1-1706-4611-93F8-016F5534FEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1107B7E1-1706-4611-93F8-016F5534FEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1107B7E1-1706-4611-93F8-016F5534FEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074E323B-AEC7-4643-BE38-6CEDEB8AD5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074E323B-AEC7-4643-BE38-6CEDEB8AD5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074E323B-AEC7-4643-BE38-6CEDEB8AD5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074E323B-AEC7-4643-BE38-6CEDEB8AD5AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{15CECCA4-FB43-4049-994B-C4025EB53E51} = {A2BACE7A-6F97-4E67-9FA2-48AE086F5CD5}
 		{E4BD37D7-B959-48F6-BB76-48235EBE9AE6} = {0820B461-036C-46C5-AB22-AF1C5CD48653}
 		{1107B7E1-1706-4611-93F8-016F5534FEDD} = {76156DC1-4E55-4E03-B30A-150F7985DB5C}
+		{074E323B-AEC7-4643-BE38-6CEDEB8AD5AE} = {76156DC1-4E55-4E03-B30A-150F7985DB5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D09E947-EDB9-415D-A230-5D7957CBC2FA}
